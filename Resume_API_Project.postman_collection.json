@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "12ba711a-8f0d-464d-a757-dac72a2b7428",
+		"name": "Resume_API_Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33746490"
+	},
+	"item": [
+		{
+			"name": "profile show list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/list/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile Created Resume",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name ",
+							"value": "Prem Rokaya",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "prem@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "2024-03-25",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "karnali",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "japan",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/home/padam/Downloads/IMG_2207.jpg"
+						},
+						{
+							"key": "docfile",
+							"type": "file",
+							"src": "/home/padam/Documents/AES Print.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/resume/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"resume",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
